@@ -5,12 +5,12 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   label: string
 }
 
-export function LabeledInput({
+export const LabeledInput = ({
   id,
   label,
   className,
   ...props
-}: Props): ReactElement {
+}: Props): ReactElement => {
   return (
     <div className={classNames("form-group", className)}>
       <label htmlFor={id} className="form-label">
@@ -21,3 +21,5 @@ export function LabeledInput({
     </div>
   )
 }
+
+LabeledInput.displayName = "LabeledInput"
