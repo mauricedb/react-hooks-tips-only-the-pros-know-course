@@ -1,18 +1,7 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-import React, { ReactElement, useEffect, useRef, useState } from "react"
+import React, { ReactElement, useState } from "react"
 
 export function Counter(): ReactElement {
   const [counter, setCounter] = useState(0)
-
-  //   for (let index = 0; index < counter; index++) {
-  //     useState(true);
-  //   }
-
-  //   if (counter % 2 === 0) {
-  //     useRef(true);
-  //   } else {
-  //     useState(true);
-  //   }
 
   return (
     <div>
