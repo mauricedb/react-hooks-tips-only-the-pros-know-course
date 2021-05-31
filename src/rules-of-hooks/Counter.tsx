@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { ReactElement, useRef, useState } from "react"
+import React, { ReactElement, useEffect, useRef, useState } from "react"
 
 export function Counter(): ReactElement {
   const [counter, setCounter] = useState(0)
@@ -18,7 +18,12 @@ export function Counter(): ReactElement {
     <div>
       <div>Count: {counter}</div>
       <div>
-        <button onClick={() => setCounter(counter + 1)}>Increment</button>
+        <button
+          className="btn btn-primary"
+          onClick={() => setCounter(counter + 1)}
+        >
+          Increment
+        </button>
       </div>
     </div>
   )
