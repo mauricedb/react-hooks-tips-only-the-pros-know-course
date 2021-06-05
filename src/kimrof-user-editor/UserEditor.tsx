@@ -1,13 +1,13 @@
 import React, { ReactElement } from "react"
 import { KimrofLabeledField } from "./kimrof"
 
-export function PersonEditor(): ReactElement {
+export function UserEditor(): ReactElement {
   const values = "To be determined"
   const isDirty = false
 
   return (
     <form className="person-editor">
-      <h2>Kimrof Person Editor</h2>
+      <h2>Kimrof User Editor</h2>
       <KimrofLabeledField label="Firstname:" name="firstname" />
       <KimrofLabeledField label="Surname:" name="surname" />
       <KimrofLabeledField label="Email:" name="email" />
