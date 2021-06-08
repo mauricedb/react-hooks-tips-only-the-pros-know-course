@@ -1,6 +1,6 @@
 import { useEffect, useState } from "./fakeReact.mjs"
 
-function Greeter(initialName) {
+function Greeter({ initialName }) {
   const [name, setName] = useState(initialName)
 
   useEffect(() => {
@@ -17,9 +17,9 @@ function Greeter(initialName) {
 }
 
 export function ArthurDent() {
-  return Greeter("Arthur Dent")
+  return Greeter({ initialName: "Arthur Dent" })
 }
 
 export function ZaphodBeeblebrox() {
-  return Greeter("Zaphod Beeblebrox")
+  return Greeter({ initialName: "Zaphod Beeblebrox" })
 }
