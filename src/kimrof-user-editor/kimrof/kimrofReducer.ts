@@ -5,7 +5,7 @@ interface SetPropertyAction {
   payload: { name: string; value: KimrofProperty }
 }
 
-type AllActions = SetPropertyAction
+type SomeAction = SetPropertyAction
 
 interface FormState {
   isDirty: boolean
@@ -19,7 +19,7 @@ interface ReducerState {
 
 export function kimrofReducer(
   state: ReducerState,
-  action: AllActions
+  action: SomeAction
 ): ReducerState {
   return state
 }
