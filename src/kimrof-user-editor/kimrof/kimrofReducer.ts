@@ -7,14 +7,14 @@ interface SetPropertyAction {
 
 type SomeAction = SetPropertyAction
 
-interface FormState {
+interface Metadata {
   isDirty: boolean
   isValid: boolean
 }
 
 interface ReducerState {
   values: KimrofObject
-  formState: FormState
+  metadata: Metadata
 }
 
 export function kimrofReducer(
