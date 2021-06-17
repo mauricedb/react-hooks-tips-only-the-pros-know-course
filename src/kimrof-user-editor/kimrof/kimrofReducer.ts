@@ -7,7 +7,7 @@ interface SetPropertyAction {
 
 type SomeAction = SetPropertyAction
 
-interface Metadata {
+export interface Metadata {
   isDirty: boolean
   isValid: boolean
 }
