@@ -1,3 +1,19 @@
 .person-editor {
   margin-top: 50px;
 }
+
+.btn-primary:disabled {
+  animation: fadeout 0.25s linear;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.65;
+  }
+}
